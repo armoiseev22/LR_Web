@@ -7,12 +7,22 @@
     <base href="./">
     <title>Я — студент НИУ ВШЭ</title>
     <link rel="icon" href="images/Image.jpg">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Я — студент НИУ ВШЭ</h1>
+    <h1 style="text-align:center; color:darkblue;">Я — студент НИУ ВШЭ</h1>
 
     <nav>
         <a href="index.html">Главная</a> |
@@ -33,7 +43,9 @@
 <section>
     <article>
         <h2>Об обучении</h2>
-        <p>Я обучаюсь на <mark>4 курсе</mark> бакалаврской программы «Прикладная математика».</p>
+        <p class="highlight">
+            Я обучаюсь на <mark>4 курсе</mark> бакалаврской программы «Прикладная математика».
+        </p>
         <p>Обучение проходит в <data value="MIEM">МИЭМ НИУ ВШЭ</data>.</p>
     </article>
 </section>
@@ -56,7 +68,7 @@
 <section>
     <h2>Спортивные направления</h2>
 
-    <ol>
+    <ol class="inline-list">
         <li>Диск-гольф</li>
         <li>Керлинг</li>
         <li>Кунг-фу</li>
@@ -92,13 +104,8 @@
 <section>
     <h2>Дисциплины по годам</h2>
 
-    <table border="1">
+    <table>
         <caption>Основные дисциплины</caption>
-
-        <colgroup>
-            <col>
-            <col>
-        </colgroup>
 
         <thead>
             <tr>
@@ -150,7 +157,6 @@
 
     <video width="400" controls>
         <source src="videos/video.mp4" type="video/mp4">
-        <track kind="subtitles">
     </video>
 </section>
 
@@ -164,16 +170,13 @@
         <button onclick="document.getElementById('info').close()">Закрыть</button>
     </dialog>
 
-    <canvas width="200" height="100" style="border:1px solid black;"></canvas>
+    <canvas width="200" height="100" style="border:2px solid black;"></canvas>
 
     <svg width="200" height="100">
         <circle cx="50" cy="50" r="40" stroke="black" fill="lightgray"/>
     </svg>
 
-    <object data="videos/video.mp4" width="200" height="150">
-        <param name="autoplay" value="false">
-    </object>
-
+    <object data="videos/video.mp4" width="200" height="150"></object>
     <embed src="videos/video.mp4" width="200" height="150">
 
     <noscript>Включите JavaScript для корректной работы.</noscript>
@@ -190,10 +193,8 @@
 </aside>
 
 <footer>
-    <hr>
     <p>© <time datetime="2026">2026</time></p>
 </footer>
 
 </body>
 </html>
-
