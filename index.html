@@ -9,6 +9,8 @@
     <link rel="icon" href="images/Image.jpg">
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v9.2.4/ol.css">
+
     <style>
         footer {
             background-color: #003366;
@@ -195,6 +197,35 @@
 <footer>
     <p>© <time datetime="2026">2026</time></p>
 </footer>
+
+<button id="mapButton" class="floating-map">🗺</button>
+
+<div id="mapBox">
+    <button id="closeMap">Свернуть</button>
+    <div id="map"></div>
+</div>
+
+<button id="chatButton" class="floating-chat">💬</button>
+
+<div id="chatBox">
+
+<div id="chatHeader">
+Чат
+<button id="closeChat">Свернуть</button>
+</div>
+
+<div id="chatMessages"></div>
+
+<div id="chatControls">
+<input id="chatInput" placeholder="Введите сообщение">
+<button id="sendBtn">➤</button>
+<button id="voiceBtn">🎤</button>
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/ol@v9.2.4/dist/ol.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
